@@ -1,0 +1,3 @@
+model,js_simulation_uniform_enabled,emd_simulation_uniform_enabled,n_simulations,completed_runs,deadlocked_runs,timeout_runs,completion_rate,deadlock_rate,timeout_rate,num_simulated_variants
+M_direct_equal_branches,0.9999938434537264,0.9994616666666668,20000,20000,0,0,1.0,0.0,0.0,4
+M_tau_unequal_simulation,0.9789990059527212,0.9687183333333332,20000,20000,0,0,1.0,0.0,0.0,4

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name><text>silent routing equivalent choice</text></name>
+    <page id="page1">
+      <place id="p_start">
+        <name><text>p_start</text></name>
+        <initialMarking><text>1</text></initialMarking>
+      </place>
+      <place id="p_after_a">
+        <name><text>p_after_a</text></name>
+      </place>
+      <place id="p_route_b">
+        <name><text>p_route_b</text></name>
+      </place>
+      <place id="p_route_d">
+        <name><text>p_route_d</text></name>
+      </place>
+      <place id="p_before_c">
+        <name><text>p_before_c</text></name>
+      </place>
+      <place id="p_end">
+        <name><text>p_end</text></name>
+      </place>
+      <transition id="t_a">
+        <name><text>a</text></name>
+      </transition>
+      <transition id="t_tau_b">
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="t_tau_d">
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="t_b">
+        <name><text>b</text></name>
+      </transition>
+      <transition id="t_d">
+        <name><text>d</text></name>
+      </transition>
+      <transition id="t_c">
+        <name><text>c</text></name>
+      </transition>
+      <arc id="arc_1" source="p_start" target="t_a"/>
+      <arc id="arc_2" source="t_a" target="p_after_a"/>
+      <arc id="arc_3" source="p_after_a" target="t_tau_b"/>
+      <arc id="arc_4" source="t_tau_b" target="p_route_b"/>
+      <arc id="arc_5" source="p_after_a" target="t_tau_d"/>
+      <arc id="arc_6" source="t_tau_d" target="p_route_d"/>
+      <arc id="arc_7" source="p_route_b" target="t_b"/>
+      <arc id="arc_8" source="t_b" target="p_before_c"/>
+      <arc id="arc_9" source="p_route_d" target="t_d"/>
+      <arc id="arc_10" source="t_d" target="p_before_c"/>
+      <arc id="arc_11" source="p_before_c" target="t_c"/>
+      <arc id="arc_12" source="t_c" target="p_end"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="p_end"><text>1</text></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

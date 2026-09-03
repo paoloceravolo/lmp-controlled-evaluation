@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name><text>M_tau - same visible language, unequal simulation probabilities</text></name>
+    <page id="page1">
+      <place id="p_start">
+        <name><text>p_start</text></name>
+        <initialMarking><text>1</text></initialMarking>
+      </place>
+      <place id="p_after_start">
+        <name><text>p_after_start</text></name>
+      </place>
+      <place id="p_after_assess">
+        <name><text>p_after_assess</text></name>
+      </place>
+      <place id="p_main_choice">
+        <name><text>p_main_choice</text></name>
+      </place>
+      <place id="p_main_notify_before_approve">
+        <name><text>p_main_notify_before_approve</text></name>
+      </place>
+      <place id="p_main_notify_after_approve">
+        <name><text>p_main_notify_after_approve</text></name>
+      </place>
+      <place id="p_main_notify_after_notify">
+        <name><text>p_main_notify_after_notify</text></name>
+      </place>
+      <place id="p_main_skip_before_approve">
+        <name><text>p_main_skip_before_approve</text></name>
+      </place>
+      <place id="p_main_skip_after_approve">
+        <name><text>p_main_skip_after_approve</text></name>
+      </place>
+      <place id="p_request_before_info">
+        <name><text>p_request_before_info</text></name>
+      </place>
+      <place id="p_request_before_approve">
+        <name><text>p_request_before_approve</text></name>
+      </place>
+      <place id="p_request_after_approve">
+        <name><text>p_request_after_approve</text></name>
+      </place>
+      <place id="p_request_after_notify">
+        <name><text>p_request_after_notify</text></name>
+      </place>
+      <place id="p_review_before_review">
+        <name><text>p_review_before_review</text></name>
+      </place>
+      <place id="p_review_before_approve">
+        <name><text>p_review_before_approve</text></name>
+      </place>
+      <place id="p_review_after_approve">
+        <name><text>p_review_after_approve</text></name>
+      </place>
+      <place id="p_end">
+        <name><text>p_end</text></name>
+      </place>
+      <transition id="t_start">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_assess">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="tau_main">
+        <name><text>tau_main</text></name>
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="tau_request">
+        <name><text>tau_request</text></name>
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="tau_review">
+        <name><text>tau_review</text></name>
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="tau_main_notify">
+        <name><text>tau_main_notify</text></name>
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="tau_main_skip_notify">
+        <name><text>tau_main_skip_notify</text></name>
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="t_main_notify_approve">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_main_notify">
+        <name><text>notify</text></name>
+      </transition>
+      <transition id="t_main_notify_close">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_main_skip_approve">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_main_skip_close">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_request_info">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_request_approve">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_request_notify">
+        <name><text>notify</text></name>
+      </transition>
+      <transition id="t_request_close">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_review">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_review_approve">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_review_close">
+        <name><text>close</text></name>
+      </transition>
+      <arc id="arc_1" source="p_start" target="t_start"/>
+      <arc id="arc_2" source="t_start" target="p_after_start"/>
+      <arc id="arc_3" source="p_after_start" target="t_assess"/>
+      <arc id="arc_4" source="t_assess" target="p_after_assess"/>
+      <arc id="arc_5" source="p_after_assess" target="tau_main"/>
+      <arc id="arc_6" source="tau_main" target="p_main_choice"/>
+      <arc id="arc_7" source="p_after_assess" target="tau_request"/>
+      <arc id="arc_8" source="tau_request" target="p_request_before_info"/>
+      <arc id="arc_9" source="p_after_assess" target="tau_review"/>
+      <arc id="arc_10" source="tau_review" target="p_review_before_review"/>
+      <arc id="arc_11" source="p_main_choice" target="tau_main_notify"/>
+      <arc id="arc_12" source="tau_main_notify" target="p_main_notify_before_approve"/>
+      <arc id="arc_13" source="p_main_choice" target="tau_main_skip_notify"/>
+      <arc id="arc_14" source="tau_main_skip_notify" target="p_main_skip_before_approve"/>
+      <arc id="arc_15" source="p_main_notify_before_approve" target="t_main_notify_approve"/>
+      <arc id="arc_16" source="t_main_notify_approve" target="p_main_notify_after_approve"/>
+      <arc id="arc_17" source="p_main_notify_after_approve" target="t_main_notify"/>
+      <arc id="arc_18" source="t_main_notify" target="p_main_notify_after_notify"/>
+      <arc id="arc_19" source="p_main_notify_after_notify" target="t_main_notify_close"/>
+      <arc id="arc_20" source="t_main_notify_close" target="p_end"/>
+      <arc id="arc_21" source="p_main_skip_before_approve" target="t_main_skip_approve"/>
+      <arc id="arc_22" source="t_main_skip_approve" target="p_main_skip_after_approve"/>
+      <arc id="arc_23" source="p_main_skip_after_approve" target="t_main_skip_close"/>
+      <arc id="arc_24" source="t_main_skip_close" target="p_end"/>
+      <arc id="arc_25" source="p_request_before_info" target="t_request_info"/>
+      <arc id="arc_26" source="t_request_info" target="p_request_before_approve"/>
+      <arc id="arc_27" source="p_request_before_approve" target="t_request_approve"/>
+      <arc id="arc_28" source="t_request_approve" target="p_request_after_approve"/>
+      <arc id="arc_29" source="p_request_after_approve" target="t_request_notify"/>
+      <arc id="arc_30" source="t_request_notify" target="p_request_after_notify"/>
+      <arc id="arc_31" source="p_request_after_notify" target="t_request_close"/>
+      <arc id="arc_32" source="t_request_close" target="p_end"/>
+      <arc id="arc_33" source="p_review_before_review" target="t_review"/>
+      <arc id="arc_34" source="t_review" target="p_review_before_approve"/>
+      <arc id="arc_35" source="p_review_before_approve" target="t_review_approve"/>
+      <arc id="arc_36" source="t_review_approve" target="p_review_after_approve"/>
+      <arc id="arc_37" source="p_review_after_approve" target="t_review_close"/>
+      <arc id="arc_38" source="t_review_close" target="p_end"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="p_end"><text>1</text></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

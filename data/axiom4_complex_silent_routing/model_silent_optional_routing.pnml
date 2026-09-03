@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name><text>complex silent routing with optional skips</text></name>
+    <page id="page1">
+      <place id="p_start">
+        <name><text>p_start</text></name>
+        <initialMarking><text>1</text></initialMarking>
+      </place>
+      <place id="p_after_start">
+        <name><text>p_after_start</text></name>
+      </place>
+      <place id="p_after_assess">
+        <name><text>p_after_assess</text></name>
+      </place>
+      <place id="p_after_request_choice">
+        <name><text>p_after_request_choice</text></name>
+      </place>
+      <place id="p_after_manual_choice">
+        <name><text>p_after_manual_choice</text></name>
+      </place>
+      <place id="p_after_approve">
+        <name><text>p_after_approve</text></name>
+      </place>
+      <place id="p_after_reject">
+        <name><text>p_after_reject</text></name>
+      </place>
+      <place id="p_before_close_approve">
+        <name><text>p_before_close_approve</text></name>
+      </place>
+      <place id="p_end">
+        <name><text>p_end</text></name>
+      </place>
+      <transition id="t_start">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_assess">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_request_info">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_manual_review">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_approve">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_reject">
+        <name><text>reject</text></name>
+      </transition>
+      <transition id="t_notify">
+        <name><text>notify</text></name>
+      </transition>
+      <transition id="t_close_approve">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_close_reject">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_tau_skip_request_info">
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="t_tau_skip_manual_review">
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <transition id="t_tau_skip_notify">
+        <toolspecific tool="ProM" version="6.0" activity="invisible"/>
+      </transition>
+      <arc id="arc_1" source="p_start" target="t_start"/>
+      <arc id="arc_2" source="t_start" target="p_after_start"/>
+      <arc id="arc_3" source="p_after_start" target="t_assess"/>
+      <arc id="arc_4" source="t_assess" target="p_after_assess"/>
+      <arc id="arc_5" source="p_after_assess" target="t_request_info"/>
+      <arc id="arc_6" source="t_request_info" target="p_after_request_choice"/>
+      <arc id="arc_7" source="p_after_assess" target="t_tau_skip_request_info"/>
+      <arc id="arc_8" source="t_tau_skip_request_info" target="p_after_request_choice"/>
+      <arc id="arc_9" source="p_after_request_choice" target="t_manual_review"/>
+      <arc id="arc_10" source="t_manual_review" target="p_after_manual_choice"/>
+      <arc id="arc_11" source="p_after_request_choice" target="t_tau_skip_manual_review"/>
+      <arc id="arc_12" source="t_tau_skip_manual_review" target="p_after_manual_choice"/>
+      <arc id="arc_13" source="p_after_manual_choice" target="t_approve"/>
+      <arc id="arc_14" source="t_approve" target="p_after_approve"/>
+      <arc id="arc_15" source="p_after_manual_choice" target="t_reject"/>
+      <arc id="arc_16" source="t_reject" target="p_after_reject"/>
+      <arc id="arc_17" source="p_after_approve" target="t_notify"/>
+      <arc id="arc_18" source="t_notify" target="p_before_close_approve"/>
+      <arc id="arc_19" source="p_after_approve" target="t_tau_skip_notify"/>
+      <arc id="arc_20" source="t_tau_skip_notify" target="p_before_close_approve"/>
+      <arc id="arc_21" source="p_before_close_approve" target="t_close_approve"/>
+      <arc id="arc_22" source="t_close_approve" target="p_end"/>
+      <arc id="arc_23" source="p_after_reject" target="t_close_reject"/>
+      <arc id="arc_24" source="t_close_reject" target="p_end"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="p_end"><text>1</text></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

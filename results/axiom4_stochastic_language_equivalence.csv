@@ -1,0 +1,5 @@
+trace,in_M_direct_equal_branches,in_M_tau_unequal_simulation,language_equivalent
+start -> assess -> approve -> close,True,True,True
+start -> assess -> approve -> notify -> close,True,True,True
+start -> assess -> manual_review -> approve -> close,True,True,True
+start -> assess -> request_info -> approve -> notify -> close,True,True,True

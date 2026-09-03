@@ -1,0 +1,5 @@
+lambda,model,score,denominator_mass,num_model_traces,num_extra_traces,M1_subset_M2,M2_subset_M1
+0.7,M1_one_short_extra,0.2592592592592592,0.14175,2,1,False,False
+0.7,M2_many_long_extras,0.6556436576720553,0.0560517890624999,101,100,False,False
+0.95,M1_one_short_extra,0.3220338983050848,0.03503125,2,1,False,False
+0.95,M2_many_long_extras,0.2925631532136663,0.0385600506286621,101,100,False,False

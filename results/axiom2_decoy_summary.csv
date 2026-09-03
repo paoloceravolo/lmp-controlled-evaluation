@@ -1,0 +1,6 @@
+metric,M1_exact_language_with_decoys,M2_clean_larger_language
+LMP_geometric_lambda_0.7,1.0,0.8695652173913043
+LMP_power_law_alpha_2.0,1.0,0.8704663212435233
+pm4py_precision_token_based_replay,0.3125,1.0
+pm4py_precision_alignments,0.3125,0.7142857142857143
+pm4py_precision_footprints,0.3125,0.5

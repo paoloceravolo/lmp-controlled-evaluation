@@ -1,0 +1,3 @@
+experiment,model,metric,bounded_K,bounded_score,exact_score,relative_overestimate,bounded_denominator_mass,exact_denominator_mass,numerator_mass
+axiom3_flower,M_flower_abcd,LMP_geometric_lambda_0.7,3,0.002115821160679,0.0016078124999999,0.3159626266614028,0.7599,1.0,0.0016078124999999
+axiom3_flower,M_flower_abcd,LMP_power_law_alpha_2.0,3,0.000685975609756,0.0005936788104043,0.1554658811031444,0.8654517769449686,1.0,0.0005936788104043229

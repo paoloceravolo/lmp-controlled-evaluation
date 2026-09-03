@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name><text>M1 exact language with dead decoys</text></name>
+    <page id="page1">
+      <place id="p_start">
+        <name><text>p_start</text></name>
+        <initialMarking><text>1</text></initialMarking>
+      </place>
+      <place id="p_after_submit">
+        <name><text>p_after_submit</text></name>
+      </place>
+      <place id="p_after_validate">
+        <name><text>p_after_validate</text></name>
+      </place>
+      <place id="p_before_archive">
+        <name><text>p_before_archive</text></name>
+      </place>
+      <place id="p_end">
+        <name><text>p_end</text></name>
+      </place>
+      <place id="p_dead_skip">
+        <name><text>p_dead_skip</text></name>
+      </place>
+      <place id="p_dead_cancel">
+        <name><text>p_dead_cancel</text></name>
+      </place>
+      <place id="p_dead_escalate">
+        <name><text>p_dead_escalate</text></name>
+      </place>
+      <place id="p_dead_manual">
+        <name><text>p_dead_manual</text></name>
+      </place>
+      <place id="p_dead_rework">
+        <name><text>p_dead_rework</text></name>
+      </place>
+      <place id="p_dead_request">
+        <name><text>p_dead_request</text></name>
+      </place>
+      <place id="p_dead_fraud">
+        <name><text>p_dead_fraud</text></name>
+      </place>
+      <place id="p_dead_manager">
+        <name><text>p_dead_manager</text></name>
+      </place>
+      <place id="p_dead_legal">
+        <name><text>p_dead_legal</text></name>
+      </place>
+      <place id="p_dead_hold">
+        <name><text>p_dead_hold</text></name>
+      </place>
+      <place id="p_dead_cancel2">
+        <name><text>p_dead_cancel2</text></name>
+      </place>
+      <transition id="t_submit">
+        <name><text>submit</text></name>
+      </transition>
+      <transition id="t_validate">
+        <name><text>validate</text></name>
+      </transition>
+      <transition id="t_approve">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_reject">
+        <name><text>reject</text></name>
+      </transition>
+      <transition id="t_archive">
+        <name><text>archive</text></name>
+      </transition>
+      <transition id="t_dead_skip">
+        <name><text>skip</text></name>
+      </transition>
+      <transition id="t_dead_cancel">
+        <name><text>cancel</text></name>
+      </transition>
+      <transition id="t_dead_escalate">
+        <name><text>escalate</text></name>
+      </transition>
+      <transition id="t_dead_manual">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_dead_rework">
+        <name><text>rework</text></name>
+      </transition>
+      <transition id="t_dead_request">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_dead_fraud">
+        <name><text>fraud_check</text></name>
+      </transition>
+      <transition id="t_dead_manager">
+        <name><text>manager_review</text></name>
+      </transition>
+      <transition id="t_dead_legal">
+        <name><text>legal_check</text></name>
+      </transition>
+      <transition id="t_dead_hold">
+        <name><text>hold</text></name>
+      </transition>
+      <transition id="t_dead_cancel2">
+        <name><text>cancel_after_check</text></name>
+      </transition>
+      <arc id="arc_1" source="p_start" target="t_submit"/>
+      <arc id="arc_2" source="t_submit" target="p_after_submit"/>
+      <arc id="arc_3" source="p_after_submit" target="t_validate"/>
+      <arc id="arc_4" source="t_validate" target="p_after_validate"/>
+      <arc id="arc_5" source="p_after_validate" target="t_approve"/>
+      <arc id="arc_6" source="t_approve" target="p_before_archive"/>
+      <arc id="arc_7" source="p_after_validate" target="t_reject"/>
+      <arc id="arc_8" source="t_reject" target="p_before_archive"/>
+      <arc id="arc_9" source="p_before_archive" target="t_archive"/>
+      <arc id="arc_10" source="t_archive" target="p_end"/>
+      <arc id="arc_11" source="p_after_submit" target="t_dead_skip"/>
+      <arc id="arc_12" source="t_dead_skip" target="p_dead_skip"/>
+      <arc id="arc_13" source="p_after_submit" target="t_dead_cancel"/>
+      <arc id="arc_14" source="t_dead_cancel" target="p_dead_cancel"/>
+      <arc id="arc_15" source="p_after_submit" target="t_dead_escalate"/>
+      <arc id="arc_16" source="t_dead_escalate" target="p_dead_escalate"/>
+      <arc id="arc_17" source="p_after_submit" target="t_dead_manual"/>
+      <arc id="arc_18" source="t_dead_manual" target="p_dead_manual"/>
+      <arc id="arc_19" source="p_after_submit" target="t_dead_rework"/>
+      <arc id="arc_20" source="t_dead_rework" target="p_dead_rework"/>
+      <arc id="arc_21" source="p_after_validate" target="t_dead_request"/>
+      <arc id="arc_22" source="t_dead_request" target="p_dead_request"/>
+      <arc id="arc_23" source="p_after_validate" target="t_dead_fraud"/>
+      <arc id="arc_24" source="t_dead_fraud" target="p_dead_fraud"/>
+      <arc id="arc_25" source="p_after_validate" target="t_dead_manager"/>
+      <arc id="arc_26" source="t_dead_manager" target="p_dead_manager"/>
+      <arc id="arc_27" source="p_after_validate" target="t_dead_legal"/>
+      <arc id="arc_28" source="t_dead_legal" target="p_dead_legal"/>
+      <arc id="arc_29" source="p_after_validate" target="t_dead_hold"/>
+      <arc id="arc_30" source="t_dead_hold" target="p_dead_hold"/>
+      <arc id="arc_31" source="p_after_validate" target="t_dead_cancel2"/>
+      <arc id="arc_32" source="t_dead_cancel2" target="p_dead_cancel2"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="p_end"><text>1</text></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

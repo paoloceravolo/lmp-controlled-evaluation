@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name><text>complex direct visible choices</text></name>
+    <page id="page1">
+      <place id="p_start">
+        <name><text>p_start</text></name>
+        <initialMarking><text>1</text></initialMarking>
+      </place>
+      <place id="p_end">
+        <name><text>p_end</text></name>
+      </place>
+      <place id="p_1_1">
+        <name><text>p_1_1</text></name>
+      </place>
+      <place id="p_1_2">
+        <name><text>p_1_2</text></name>
+      </place>
+      <place id="p_1_3">
+        <name><text>p_1_3</text></name>
+      </place>
+      <place id="p_2_1">
+        <name><text>p_2_1</text></name>
+      </place>
+      <place id="p_2_2">
+        <name><text>p_2_2</text></name>
+      </place>
+      <place id="p_2_3">
+        <name><text>p_2_3</text></name>
+      </place>
+      <place id="p_3_1">
+        <name><text>p_3_1</text></name>
+      </place>
+      <place id="p_3_2">
+        <name><text>p_3_2</text></name>
+      </place>
+      <place id="p_3_3">
+        <name><text>p_3_3</text></name>
+      </place>
+      <place id="p_3_4">
+        <name><text>p_3_4</text></name>
+      </place>
+      <place id="p_4_1">
+        <name><text>p_4_1</text></name>
+      </place>
+      <place id="p_4_2">
+        <name><text>p_4_2</text></name>
+      </place>
+      <place id="p_4_3">
+        <name><text>p_4_3</text></name>
+      </place>
+      <place id="p_4_4">
+        <name><text>p_4_4</text></name>
+      </place>
+      <place id="p_5_1">
+        <name><text>p_5_1</text></name>
+      </place>
+      <place id="p_5_2">
+        <name><text>p_5_2</text></name>
+      </place>
+      <place id="p_5_3">
+        <name><text>p_5_3</text></name>
+      </place>
+      <place id="p_5_4">
+        <name><text>p_5_4</text></name>
+      </place>
+      <place id="p_6_1">
+        <name><text>p_6_1</text></name>
+      </place>
+      <place id="p_6_2">
+        <name><text>p_6_2</text></name>
+      </place>
+      <place id="p_6_3">
+        <name><text>p_6_3</text></name>
+      </place>
+      <place id="p_6_4">
+        <name><text>p_6_4</text></name>
+      </place>
+      <place id="p_7_1">
+        <name><text>p_7_1</text></name>
+      </place>
+      <place id="p_7_2">
+        <name><text>p_7_2</text></name>
+      </place>
+      <place id="p_7_3">
+        <name><text>p_7_3</text></name>
+      </place>
+      <place id="p_7_4">
+        <name><text>p_7_4</text></name>
+      </place>
+      <place id="p_8_1">
+        <name><text>p_8_1</text></name>
+      </place>
+      <place id="p_8_2">
+        <name><text>p_8_2</text></name>
+      </place>
+      <place id="p_8_3">
+        <name><text>p_8_3</text></name>
+      </place>
+      <place id="p_8_4">
+        <name><text>p_8_4</text></name>
+      </place>
+      <place id="p_8_5">
+        <name><text>p_8_5</text></name>
+      </place>
+      <place id="p_9_1">
+        <name><text>p_9_1</text></name>
+      </place>
+      <place id="p_9_2">
+        <name><text>p_9_2</text></name>
+      </place>
+      <place id="p_9_3">
+        <name><text>p_9_3</text></name>
+      </place>
+      <place id="p_9_4">
+        <name><text>p_9_4</text></name>
+      </place>
+      <place id="p_9_5">
+        <name><text>p_9_5</text></name>
+      </place>
+      <place id="p_10_1">
+        <name><text>p_10_1</text></name>
+      </place>
+      <place id="p_10_2">
+        <name><text>p_10_2</text></name>
+      </place>
+      <place id="p_10_3">
+        <name><text>p_10_3</text></name>
+      </place>
+      <place id="p_10_4">
+        <name><text>p_10_4</text></name>
+      </place>
+      <place id="p_10_5">
+        <name><text>p_10_5</text></name>
+      </place>
+      <place id="p_11_1">
+        <name><text>p_11_1</text></name>
+      </place>
+      <place id="p_11_2">
+        <name><text>p_11_2</text></name>
+      </place>
+      <place id="p_11_3">
+        <name><text>p_11_3</text></name>
+      </place>
+      <place id="p_11_4">
+        <name><text>p_11_4</text></name>
+      </place>
+      <place id="p_11_5">
+        <name><text>p_11_5</text></name>
+      </place>
+      <place id="p_12_1">
+        <name><text>p_12_1</text></name>
+      </place>
+      <place id="p_12_2">
+        <name><text>p_12_2</text></name>
+      </place>
+      <place id="p_12_3">
+        <name><text>p_12_3</text></name>
+      </place>
+      <place id="p_12_4">
+        <name><text>p_12_4</text></name>
+      </place>
+      <place id="p_12_5">
+        <name><text>p_12_5</text></name>
+      </place>
+      <place id="p_12_6">
+        <name><text>p_12_6</text></name>
+      </place>
+      <transition id="t_1_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_1_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_1_3">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_1_4">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_2_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_2_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_2_3">
+        <name><text>reject</text></name>
+      </transition>
+      <transition id="t_2_4">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_3_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_3_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_3_3">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_3_4">
+        <name><text>notify</text></name>
+      </transition>
+      <transition id="t_3_5">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_4_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_4_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_4_3">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_4_4">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_4_5">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_5_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_5_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_5_3">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_5_4">
+        <name><text>reject</text></name>
+      </transition>
+      <transition id="t_5_5">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_6_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_6_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_6_3">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_6_4">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_6_5">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_7_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_7_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_7_3">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_7_4">
+        <name><text>reject</text></name>
+      </transition>
+      <transition id="t_7_5">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_8_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_8_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_8_3">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_8_4">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_8_5">
+        <name><text>notify</text></name>
+      </transition>
+      <transition id="t_8_6">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_9_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_9_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_9_3">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_9_4">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_9_5">
+        <name><text>notify</text></name>
+      </transition>
+      <transition id="t_9_6">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_10_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_10_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_10_3">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_10_4">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_10_5">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_10_6">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_11_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_11_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_11_3">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_11_4">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_11_5">
+        <name><text>reject</text></name>
+      </transition>
+      <transition id="t_11_6">
+        <name><text>close</text></name>
+      </transition>
+      <transition id="t_12_1">
+        <name><text>start</text></name>
+      </transition>
+      <transition id="t_12_2">
+        <name><text>assess</text></name>
+      </transition>
+      <transition id="t_12_3">
+        <name><text>request_info</text></name>
+      </transition>
+      <transition id="t_12_4">
+        <name><text>manual_review</text></name>
+      </transition>
+      <transition id="t_12_5">
+        <name><text>approve</text></name>
+      </transition>
+      <transition id="t_12_6">
+        <name><text>notify</text></name>
+      </transition>
+      <transition id="t_12_7">
+        <name><text>close</text></name>
+      </transition>
+      <arc id="arc_1" source="p_start" target="t_1_1"/>
+      <arc id="arc_2" source="t_1_1" target="p_1_1"/>
+      <arc id="arc_3" source="p_1_1" target="t_1_2"/>
+      <arc id="arc_4" source="t_1_2" target="p_1_2"/>
+      <arc id="arc_5" source="p_1_2" target="t_1_3"/>
+      <arc id="arc_6" source="t_1_3" target="p_1_3"/>
+      <arc id="arc_7" source="p_1_3" target="t_1_4"/>
+      <arc id="arc_8" source="t_1_4" target="p_end"/>
+      <arc id="arc_9" source="p_start" target="t_2_1"/>
+      <arc id="arc_10" source="t_2_1" target="p_2_1"/>
+      <arc id="arc_11" source="p_2_1" target="t_2_2"/>
+      <arc id="arc_12" source="t_2_2" target="p_2_2"/>
+      <arc id="arc_13" source="p_2_2" target="t_2_3"/>
+      <arc id="arc_14" source="t_2_3" target="p_2_3"/>
+      <arc id="arc_15" source="p_2_3" target="t_2_4"/>
+      <arc id="arc_16" source="t_2_4" target="p_end"/>
+      <arc id="arc_17" source="p_start" target="t_3_1"/>
+      <arc id="arc_18" source="t_3_1" target="p_3_1"/>
+      <arc id="arc_19" source="p_3_1" target="t_3_2"/>
+      <arc id="arc_20" source="t_3_2" target="p_3_2"/>
+      <arc id="arc_21" source="p_3_2" target="t_3_3"/>
+      <arc id="arc_22" source="t_3_3" target="p_3_3"/>
+      <arc id="arc_23" source="p_3_3" target="t_3_4"/>
+      <arc id="arc_24" source="t_3_4" target="p_3_4"/>
+      <arc id="arc_25" source="p_3_4" target="t_3_5"/>
+      <arc id="arc_26" source="t_3_5" target="p_end"/>
+      <arc id="arc_27" source="p_start" target="t_4_1"/>
+      <arc id="arc_28" source="t_4_1" target="p_4_1"/>
+      <arc id="arc_29" source="p_4_1" target="t_4_2"/>
+      <arc id="arc_30" source="t_4_2" target="p_4_2"/>
+      <arc id="arc_31" source="p_4_2" target="t_4_3"/>
+      <arc id="arc_32" source="t_4_3" target="p_4_3"/>
+      <arc id="arc_33" source="p_4_3" target="t_4_4"/>
+      <arc id="arc_34" source="t_4_4" target="p_4_4"/>
+      <arc id="arc_35" source="p_4_4" target="t_4_5"/>
+      <arc id="arc_36" source="t_4_5" target="p_end"/>
+      <arc id="arc_37" source="p_start" target="t_5_1"/>
+      <arc id="arc_38" source="t_5_1" target="p_5_1"/>
+      <arc id="arc_39" source="p_5_1" target="t_5_2"/>
+      <arc id="arc_40" source="t_5_2" target="p_5_2"/>
+      <arc id="arc_41" source="p_5_2" target="t_5_3"/>
+      <arc id="arc_42" source="t_5_3" target="p_5_3"/>
+      <arc id="arc_43" source="p_5_3" target="t_5_4"/>
+      <arc id="arc_44" source="t_5_4" target="p_5_4"/>
+      <arc id="arc_45" source="p_5_4" target="t_5_5"/>
+      <arc id="arc_46" source="t_5_5" target="p_end"/>
+      <arc id="arc_47" source="p_start" target="t_6_1"/>
+      <arc id="arc_48" source="t_6_1" target="p_6_1"/>
+      <arc id="arc_49" source="p_6_1" target="t_6_2"/>
+      <arc id="arc_50" source="t_6_2" target="p_6_2"/>
+      <arc id="arc_51" source="p_6_2" target="t_6_3"/>
+      <arc id="arc_52" source="t_6_3" target="p_6_3"/>
+      <arc id="arc_53" source="p_6_3" target="t_6_4"/>
+      <arc id="arc_54" source="t_6_4" target="p_6_4"/>
+      <arc id="arc_55" source="p_6_4" target="t_6_5"/>
+      <arc id="arc_56" source="t_6_5" target="p_end"/>
+      <arc id="arc_57" source="p_start" target="t_7_1"/>
+      <arc id="arc_58" source="t_7_1" target="p_7_1"/>
+      <arc id="arc_59" source="p_7_1" target="t_7_2"/>
+      <arc id="arc_60" source="t_7_2" target="p_7_2"/>
+      <arc id="arc_61" source="p_7_2" target="t_7_3"/>
+      <arc id="arc_62" source="t_7_3" target="p_7_3"/>
+      <arc id="arc_63" source="p_7_3" target="t_7_4"/>
+      <arc id="arc_64" source="t_7_4" target="p_7_4"/>
+      <arc id="arc_65" source="p_7_4" target="t_7_5"/>
+      <arc id="arc_66" source="t_7_5" target="p_end"/>
+      <arc id="arc_67" source="p_start" target="t_8_1"/>
+      <arc id="arc_68" source="t_8_1" target="p_8_1"/>
+      <arc id="arc_69" source="p_8_1" target="t_8_2"/>
+      <arc id="arc_70" source="t_8_2" target="p_8_2"/>
+      <arc id="arc_71" source="p_8_2" target="t_8_3"/>
+      <arc id="arc_72" source="t_8_3" target="p_8_3"/>
+      <arc id="arc_73" source="p_8_3" target="t_8_4"/>
+      <arc id="arc_74" source="t_8_4" target="p_8_4"/>
+      <arc id="arc_75" source="p_8_4" target="t_8_5"/>
+      <arc id="arc_76" source="t_8_5" target="p_8_5"/>
+      <arc id="arc_77" source="p_8_5" target="t_8_6"/>
+      <arc id="arc_78" source="t_8_6" target="p_end"/>
+      <arc id="arc_79" source="p_start" target="t_9_1"/>
+      <arc id="arc_80" source="t_9_1" target="p_9_1"/>
+      <arc id="arc_81" source="p_9_1" target="t_9_2"/>
+      <arc id="arc_82" source="t_9_2" target="p_9_2"/>
+      <arc id="arc_83" source="p_9_2" target="t_9_3"/>
+      <arc id="arc_84" source="t_9_3" target="p_9_3"/>
+      <arc id="arc_85" source="p_9_3" target="t_9_4"/>
+      <arc id="arc_86" source="t_9_4" target="p_9_4"/>
+      <arc id="arc_87" source="p_9_4" target="t_9_5"/>
+      <arc id="arc_88" source="t_9_5" target="p_9_5"/>
+      <arc id="arc_89" source="p_9_5" target="t_9_6"/>
+      <arc id="arc_90" source="t_9_6" target="p_end"/>
+      <arc id="arc_91" source="p_start" target="t_10_1"/>
+      <arc id="arc_92" source="t_10_1" target="p_10_1"/>
+      <arc id="arc_93" source="p_10_1" target="t_10_2"/>
+      <arc id="arc_94" source="t_10_2" target="p_10_2"/>
+      <arc id="arc_95" source="p_10_2" target="t_10_3"/>
+      <arc id="arc_96" source="t_10_3" target="p_10_3"/>
+      <arc id="arc_97" source="p_10_3" target="t_10_4"/>
+      <arc id="arc_98" source="t_10_4" target="p_10_4"/>
+      <arc id="arc_99" source="p_10_4" target="t_10_5"/>
+      <arc id="arc_100" source="t_10_5" target="p_10_5"/>
+      <arc id="arc_101" source="p_10_5" target="t_10_6"/>
+      <arc id="arc_102" source="t_10_6" target="p_end"/>
+      <arc id="arc_103" source="p_start" target="t_11_1"/>
+      <arc id="arc_104" source="t_11_1" target="p_11_1"/>
+      <arc id="arc_105" source="p_11_1" target="t_11_2"/>
+      <arc id="arc_106" source="t_11_2" target="p_11_2"/>
+      <arc id="arc_107" source="p_11_2" target="t_11_3"/>
+      <arc id="arc_108" source="t_11_3" target="p_11_3"/>
+      <arc id="arc_109" source="p_11_3" target="t_11_4"/>
+      <arc id="arc_110" source="t_11_4" target="p_11_4"/>
+      <arc id="arc_111" source="p_11_4" target="t_11_5"/>
+      <arc id="arc_112" source="t_11_5" target="p_11_5"/>
+      <arc id="arc_113" source="p_11_5" target="t_11_6"/>
+      <arc id="arc_114" source="t_11_6" target="p_end"/>
+      <arc id="arc_115" source="p_start" target="t_12_1"/>
+      <arc id="arc_116" source="t_12_1" target="p_12_1"/>
+      <arc id="arc_117" source="p_12_1" target="t_12_2"/>
+      <arc id="arc_118" source="t_12_2" target="p_12_2"/>
+      <arc id="arc_119" source="p_12_2" target="t_12_3"/>
+      <arc id="arc_120" source="t_12_3" target="p_12_3"/>
+      <arc id="arc_121" source="p_12_3" target="t_12_4"/>
+      <arc id="arc_122" source="t_12_4" target="p_12_4"/>
+      <arc id="arc_123" source="p_12_4" target="t_12_5"/>
+      <arc id="arc_124" source="t_12_5" target="p_12_5"/>
+      <arc id="arc_125" source="p_12_5" target="t_12_6"/>
+      <arc id="arc_126" source="t_12_6" target="p_12_6"/>
+      <arc id="arc_127" source="p_12_6" target="t_12_7"/>
+      <arc id="arc_128" source="t_12_7" target="p_end"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="p_end"><text>1</text></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

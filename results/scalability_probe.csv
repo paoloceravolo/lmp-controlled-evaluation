@@ -1,0 +1,9 @@
+experiment,log,model,model_language_size,playout_time_s,K,total_experiment_time_s
+axiom3_flower,flower_log,M_constrained_abc,0,0.0002474399989296,1,0.1853239829997619
+axiom3_flower,flower_log,M_flower_abcd,5,0.0005287759995553,1,0.1853239829997619
+axiom3_flower,flower_log,M_constrained_abc,0,0.0001356930006295,2,0.1244223730009252
+axiom3_flower,flower_log,M_flower_abcd,21,0.0020731630011141,2,0.1244223730009252
+axiom3_flower,flower_log,M_constrained_abc,1,0.0004808350004168,3,0.1320447170000989
+axiom3_flower,flower_log,M_flower_abcd,85,0.0140583070005959,3,0.1320447170000989
+axiom3_flower,flower_log,M_constrained_abc,1,0.0003151159999106,4,0.3020698879990959
+axiom3_flower,flower_log,M_flower_abcd,341,0.1686651190011616,4,0.3020698879990959

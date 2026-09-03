@@ -1,0 +1,9 @@
+model,trace,log_probability,simulation_probability,absolute_difference
+M_direct_equal_branches,start -> assess -> approve -> close,0.25,0.25165,0.0016499999999999
+M_direct_equal_branches,start -> assess -> approve -> notify -> close,0.25,0.2484,0.0015999999999999
+M_direct_equal_branches,start -> assess -> manual_review -> approve -> close,0.25,0.2487,0.0012999999999999
+M_direct_equal_branches,start -> assess -> request_info -> approve -> notify -> close,0.25,0.25125,0.0012499999999999
+M_tau_unequal_simulation,start -> assess -> approve -> close,0.25,0.163,0.087
+M_tau_unequal_simulation,start -> assess -> approve -> notify -> close,0.25,0.16935,0.08065
+M_tau_unequal_simulation,start -> assess -> manual_review -> approve -> close,0.25,0.3337,0.0837
+M_tau_unequal_simulation,start -> assess -> request_info -> approve -> notify -> close,0.25,0.33395,0.08395

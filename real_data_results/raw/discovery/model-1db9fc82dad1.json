@@ -1,0 +1,24 @@
+{
+  "algorithm": "heuristics",
+  "arcs": 157,
+  "blocked_reason": null,
+  "created_at": "2026-09-03T14:37:07.733055+00:00",
+  "dataset_id": "bpi_2012",
+  "elapsed_seconds": 0.9713190620004752,
+  "implementation": "pm4py",
+  "job_id": "model-1db9fc82dad1",
+  "model_path": "work/models/bpi_2012/model-1db9fc82dad1/model.pnml",
+  "parameters": {
+    "and_threshold": 0.65,
+    "dependency_threshold": 0.9,
+    "loop_two_threshold": 0.5
+  },
+  "places": 37,
+  "pm4py_version": "2.7.22.2",
+  "ready": true,
+  "silent_transitions": 55,
+  "source_path": "raw/bpi_2012/RequestForPayment.xes.gz",
+  "stage": "discovery",
+  "transitions": 77,
+  "visible_transitions": 22
+}

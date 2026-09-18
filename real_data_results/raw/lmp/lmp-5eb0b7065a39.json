@@ -1,0 +1,21 @@
+{
+  "alphabet_hash": "alphabet-6617954d1133",
+  "computed_at": "2026-09-03T14:46:17.984753+00:00",
+  "core_runtime_s": 17.61167100399871,
+  "dataset_id": "bpi_2012",
+  "fitness_filter": null,
+  "metric": "lmp_geometric",
+  "metric_params_json": "{\"calibration_basis\":\"distinct_variants\",\"parameter\":0.9823840036712641,\"prior\":\"geometric\"}",
+  "model_id": "model-c0889abf0fba",
+  "peak_rss_mb": null,
+  "prior_hash": "prior-b55616132271",
+  "reachability_states": 0,
+  "run_id": "lmp-5eb0b7065a39",
+  "runtime_s": 17.61167100399871,
+  "sample_fraction": null,
+  "sample_id": null,
+  "sample_seed": null,
+  "schema_version": 1,
+  "status": "reachability_state_limit",
+  "tool_version": "2.7.22.2"
+}

@@ -1,0 +1,21 @@
+{
+  "alphabet_hash": "alphabet-6617954d1133",
+  "computed_at": "2026-09-03T14:45:32.996287+00:00",
+  "core_runtime_s": 17.998340556001494,
+  "dataset_id": "bpi_2012",
+  "fitness_filter": null,
+  "metric": "lmp_power_law",
+  "metric_params_json": "{\"calibration_basis\":\"distinct_variants\",\"parameter\":1.1635298694951404,\"prior\":\"power_law\"}",
+  "model_id": "model-7462247286ae",
+  "peak_rss_mb": null,
+  "prior_hash": "prior-6c70a314277b",
+  "reachability_states": 0,
+  "run_id": "lmp-885fce1a49c6",
+  "runtime_s": 17.998340556001494,
+  "sample_fraction": null,
+  "sample_id": null,
+  "sample_seed": null,
+  "schema_version": 1,
+  "status": "reachability_state_limit",
+  "tool_version": "2.7.22.2"
+}

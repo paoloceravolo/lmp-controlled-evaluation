@@ -1,0 +1,4 @@
+dataset_id,cases,variants,activities,exact_lmp_geo_of_9,token_precision_min,token_precision_median,token_precision_max,lmp_geo_min,lmp_geo_median,lmp_geo_max
+road_fines,150370,231,11,6,0.582,0.753,0.993,0.057,0.105,0.990
+sepsis,1050,846,16,6,0.258,0.493,0.719,0.000,0.000,0.003
+bpi_2012,13087,4366,24,5,0.105,0.154,0.395,0.000,0.014,0.382

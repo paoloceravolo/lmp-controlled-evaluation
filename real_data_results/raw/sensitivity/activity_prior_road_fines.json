@@ -1,0 +1,156 @@
+{
+  "alphabet_size": 11,
+  "computed_at": "2026-09-05T09:42:38.544294+00:00",
+  "dataset_id": "road_fines",
+  "laplace_delta": 1.0,
+  "prior": "geometric",
+  "prior_parameter": 0.9258747122872905,
+  "results": [
+    {
+      "model_id": "model-158f7858ebfc",
+      "status": "reachability_state_limit"
+    },
+    {
+      "model_id": "model-16d9be7ee960",
+      "status": "reachability_state_limit"
+    },
+    {
+      "laplace": {
+        "accepted_variants": 3,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.0031648356425916257,
+        "lower_bound": 0.9997473499743367,
+        "score": 0.9997473499743367,
+        "status": "ok",
+        "upper_bound": 0.9997473499743367
+      },
+      "model_id": "model-1fa76b206b96",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 3,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.0005309089987411736,
+        "lower_bound": 0.9903370524412075,
+        "score": 0.9903370524412075,
+        "status": "ok",
+        "upper_bound": 0.9903370524412075
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 69,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.02368369160210542,
+        "lower_bound": 0.11285938724478221,
+        "score": 0.11285938724478221,
+        "status": "ok",
+        "upper_bound": 0.11285938724478221
+      },
+      "model_id": "model-3a3ac6f6c993",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 69,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.010071201527984925,
+        "lower_bound": 0.05664033007077032,
+        "score": 0.05664033007077032,
+        "status": "ok",
+        "upper_bound": 0.05664033007077032
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 43,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.02678336741032073,
+        "lower_bound": 0.09979744844784079,
+        "score": 0.09979744844784079,
+        "status": "ok",
+        "upper_bound": 0.09979744844784079
+      },
+      "model_id": "model-67b681349bb2",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 43,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.008197427391160372,
+        "lower_bound": 0.06957042983882987,
+        "score": 0.06957042983882987,
+        "status": "ok",
+        "upper_bound": 0.06957042983882987
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 231,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.03151611799931217,
+        "lower_bound": 0.21553576945520755,
+        "score": 0.21553576945520755,
+        "status": "ok",
+        "upper_bound": 0.21553576945520755
+      },
+      "model_id": "model-6eb711ead7aa",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 231,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.011724464066217547,
+        "lower_bound": 0.11098031273664119,
+        "score": 0.11098031273664119,
+        "status": "ok",
+        "upper_bound": 0.11098031273664119
+      }
+    },
+    {
+      "model_id": "model-92c73f36e1c6",
+      "status": "reachability_state_limit"
+    },
+    {
+      "laplace": {
+        "accepted_variants": 20,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.028210060535615797,
+        "lower_bound": 0.22239358492007674,
+        "score": 0.22239358492007674,
+        "status": "ok",
+        "upper_bound": 0.22239358492007674
+      },
+      "model_id": "model-959e8e674eca",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 20,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.008289671412758659,
+        "lower_bound": 0.13789619016813906,
+        "score": 0.13789619016813906,
+        "status": "ok",
+        "upper_bound": 0.13789619016813906
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 82,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.029848618162878583,
+        "lower_bound": 0.22736792205915096,
+        "score": 0.22736792205915096,
+        "status": "ok",
+        "upper_bound": 0.22736792205915096
+      },
+      "model_id": "model-b35c458b8b86",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 82,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.012227689728401235,
+        "lower_bound": 0.09875693359834822,
+        "score": 0.09875693359834822,
+        "status": "ok",
+        "upper_bound": 0.09875693359834822
+      }
+    }
+  ],
+  "runtime_s": 10.13403490697965,
+  "schema_version": 1
+}

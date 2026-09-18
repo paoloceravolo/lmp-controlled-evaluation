@@ -1,0 +1,57 @@
+{
+  "run_id": "classical-48fac8d2a692",
+  "computed_at": "2026-09-03T14:01:37.991532+00:00",
+  "dataset_id": "sepsis",
+  "metrics": [
+    {
+      "elapsed_seconds": 120.0000500290007,
+      "error": "metric exceeded 120 seconds",
+      "error_type": "TimeoutError",
+      "metric": "alignment_precision",
+      "status": "failed",
+      "value": null
+    },
+    {
+      "elapsed_seconds": 23.106431516000157,
+      "metric": "token_precision",
+      "status": "ok",
+      "value": 0.25762075419340746
+    },
+    {
+      "elapsed_seconds": 120.00011345100029,
+      "error": "metric exceeded 120 seconds",
+      "error_type": "TimeoutError",
+      "metric": "alignment_fitness",
+      "status": "failed",
+      "value": null
+    },
+    {
+      "elapsed_seconds": 1.315962564000074,
+      "metric": "token_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "elapsed_seconds": 1.315962564000074,
+      "metric": "token_fitness.log_fitness",
+      "status": "ok",
+      "value": 1.0
+    },
+    {
+      "elapsed_seconds": 1.315962564000074,
+      "metric": "token_fitness.perc_fit_traces",
+      "status": "ok",
+      "value": 100.0
+    },
+    {
+      "elapsed_seconds": 1.315962564000074,
+      "metric": "token_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 100.0
+    }
+  ],
+  "model_id": "model-f7d11931f1b3",
+  "model_path": "work/models/sepsis/model-f7d11931f1b3/model.pnml",
+  "pm4py_version": "2.7.22.2",
+  "schema_version": 1
+}

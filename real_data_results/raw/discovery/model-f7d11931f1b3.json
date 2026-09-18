@@ -1,0 +1,22 @@
+{
+  "algorithm": "imf",
+  "arcs": 116,
+  "blocked_reason": null,
+  "created_at": "2026-09-03T12:32:07.562011+00:00",
+  "dataset_id": "sepsis",
+  "elapsed_seconds": 0.41157273199951305,
+  "implementation": "pm4py",
+  "job_id": "model-f7d11931f1b3",
+  "model_path": "work/models/sepsis/model-f7d11931f1b3/model.pnml",
+  "parameters": {
+    "noise_threshold": 0.0
+  },
+  "places": 39,
+  "pm4py_version": "2.7.22.2",
+  "ready": true,
+  "silent_transitions": 34,
+  "source_path": "raw/sepsis/Sepsis Cases - Event Log.xes.gz",
+  "stage": "discovery",
+  "transitions": 50,
+  "visible_transitions": 16
+}

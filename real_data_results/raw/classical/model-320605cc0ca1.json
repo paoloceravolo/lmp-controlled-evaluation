@@ -1,0 +1,55 @@
+{
+  "run_id": "classical-a50c4f64f632",
+  "computed_at": "2026-09-04T14:04:55.977580+00:00",
+  "dataset_id": "bpi_2012",
+  "metrics": [
+    {
+      "elapsed_seconds": 1075.4997537500021,
+      "metric": "alignment_precision",
+      "status": "ok",
+      "value": 0.31269274884098486
+    },
+    {
+      "elapsed_seconds": 232.52516586599813,
+      "metric": "token_precision",
+      "status": "ok",
+      "value": 0.31220890274300683
+    },
+    {
+      "elapsed_seconds": 3600.0093685600004,
+      "error": "metric exceeded 3600 seconds",
+      "error_type": "TimeoutError",
+      "metric": "alignment_fitness",
+      "status": "failed",
+      "value": null
+    },
+    {
+      "elapsed_seconds": 19.733523692993913,
+      "metric": "token_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 0.9840746664628991
+    },
+    {
+      "elapsed_seconds": 19.733523692993913,
+      "metric": "token_fitness.log_fitness",
+      "status": "ok",
+      "value": 0.9722098545268516
+    },
+    {
+      "elapsed_seconds": 19.733523692993913,
+      "metric": "token_fitness.perc_fit_traces",
+      "status": "ok",
+      "value": 62.51241690226943
+    },
+    {
+      "elapsed_seconds": 19.733523692993913,
+      "metric": "token_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 62.51241690226943
+    }
+  ],
+  "model_id": "model-320605cc0ca1",
+  "model_path": "work/models/bpi_2012/model-320605cc0ca1/model.pnml",
+  "pm4py_version": "2.7.22.2",
+  "schema_version": 1
+}

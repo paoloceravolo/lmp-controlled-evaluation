@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "note": "Dataset section of core/config/experiments.json, extracted for reference. Set LMP_VEXG_DATA_ROOT to the directory containing raw/ (see README.md) instead of editing paths here.",
+  "datasets": [
+    {
+      "id": "road_fines",
+      "source_name": "Road Traffic Fine Management Process",
+      "source_doi": "10.4121/uuid:270fd440-1057-4fb9-89a9-b699b47990f5",
+      "path": "raw/road_fines/Road_Traffic_Fine_Management_Process.xes.gz",
+      "case_id": "case:concept:name",
+      "activity": "concept:name",
+      "timestamp": "time:timestamp",
+      "lifecycle_policy": "retain_all_label_by_concept_name"
+    },
+    {
+      "id": "sepsis",
+      "source_name": "Sepsis Cases - Event Log",
+      "source_doi": "10.4121/uuid:915d2bfb-7e84-49ad-a286-dc35f063a460",
+      "path": "raw/sepsis/Sepsis Cases - Event Log.xes.gz",
+      "case_id": "case:concept:name",
+      "activity": "concept:name",
+      "timestamp": "time:timestamp",
+      "lifecycle_policy": "retain_all_label_by_concept_name"
+    },
+    {
+      "id": "bpi_2012",
+      "source_name": "BPI Challenge 2012",
+      "source_doi": "10.4121/uuid:3926db30-f712-4394-aebc-75976070e91f",
+      "source_identity_note": "The distributed archive retains the folder/file name RequestForPayment.xes.gz from its original submission, but DATA.xml and the XES metadata identify this file as BPI Challenge 2012.",
+      "path": "raw/bpi_2012/RequestForPayment.xes.gz",
+      "case_id": "case:concept:name",
+      "activity": "concept:name",
+      "timestamp": "time:timestamp",
+      "lifecycle_policy": "retain_all_label_by_concept_name"
+    }
+  ]
+}

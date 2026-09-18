@@ -1,0 +1,79 @@
+{
+  "run_id": "classical-10c90e004a00",
+  "computed_at": "2026-09-03T13:57:11.683596+00:00",
+  "dataset_id": "sepsis",
+  "metrics": [
+    {
+      "elapsed_seconds": 120.0000463560009,
+      "error": "metric exceeded 120 seconds",
+      "error_type": "TimeoutError",
+      "metric": "alignment_precision",
+      "status": "failed",
+      "value": null
+    },
+    {
+      "elapsed_seconds": 17.840454302999206,
+      "metric": "token_precision",
+      "status": "ok",
+      "value": 0.4184730084219246
+    },
+    {
+      "elapsed_seconds": 53.72069559300144,
+      "metric": "alignment_fitness.averageFitness",
+      "status": "ok",
+      "value": 0.9682320210819118
+    },
+    {
+      "elapsed_seconds": 53.72069559300144,
+      "metric": "alignment_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 0.9682320210819118
+    },
+    {
+      "elapsed_seconds": 53.72069559300144,
+      "metric": "alignment_fitness.log_fitness",
+      "status": "ok",
+      "value": 0.9872590386093623
+    },
+    {
+      "elapsed_seconds": 53.72069559300144,
+      "metric": "alignment_fitness.percFitTraces",
+      "status": "ok",
+      "value": 87.9047619047619
+    },
+    {
+      "elapsed_seconds": 53.72069559300144,
+      "metric": "alignment_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 87.9047619047619
+    },
+    {
+      "elapsed_seconds": 1.1228473490009492,
+      "metric": "token_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 0.9935040633640383
+    },
+    {
+      "elapsed_seconds": 1.1228473490009492,
+      "metric": "token_fitness.log_fitness",
+      "status": "ok",
+      "value": 0.9963305365132022
+    },
+    {
+      "elapsed_seconds": 1.1228473490009492,
+      "metric": "token_fitness.perc_fit_traces",
+      "status": "ok",
+      "value": 93.04761904761905
+    },
+    {
+      "elapsed_seconds": 1.1228473490009492,
+      "metric": "token_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 93.04761904761905
+    }
+  ],
+  "model_id": "model-d5afeb55020b",
+  "model_path": "work/models/sepsis/model-d5afeb55020b/model.pnml",
+  "pm4py_version": "2.7.22.2",
+  "schema_version": 1
+}

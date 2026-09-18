@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "study_id": "lmp_real_logs_v1",
+  "random_seed": 20260903,
+  "paths": {
+    "vexg_data_root": "../real_data",
+    "entropia_jar": "external/entropia/jbpt-pm-entropia.jar",
+    "split_miner_adapter": "external/split-miner/run_split_miner.sh"
+  },
+  "datasets": [
+    {
+      "id": "road_fines",
+      "enabled": true,
+      "source_name": "Road Traffic Fine Management Process",
+      "source_doi": "10.4121/uuid:270fd440-1057-4fb9-89a9-b699b47990f5",
+      "path": "raw/road_fines/Road_Traffic_Fine_Management_Process.xes.gz",
+      "case_id": "case:concept:name",
+      "activity": "concept:name",
+      "timestamp": "time:timestamp",
+      "lifecycle_policy": "retain_all_label_by_concept_name"
+    },
+    {
+      "id": "sepsis",
+      "enabled": true,
+      "source_name": "Sepsis Cases - Event Log",
+      "source_doi": "10.4121/uuid:915d2bfb-7e84-49ad-a286-dc35f063a460",
+      "path": "raw/sepsis/Sepsis Cases - Event Log.xes.gz",
+      "case_id": "case:concept:name",
+      "activity": "concept:name",
+      "timestamp": "time:timestamp",
+      "lifecycle_policy": "retain_all_label_by_concept_name"
+    },
+    {
+      "id": "bpi_2012",
+      "enabled": true,
+      "source_name": "BPI Challenge 2012",
+      "source_doi": "10.4121/uuid:3926db30-f712-4394-aebc-75976070e91f",
+      "source_identity_note": "The distributed archive retains the folder/file name bpi_challenge_2020_request_for_payment/RequestForPayment.xes.gz from its original submission, but DATA.xml and the XES metadata identify this file as BPI Challenge 2012 (see real_data/README.md).",
+      "path": "raw/bpi_2012/RequestForPayment.xes.gz",
+      "case_id": "case:concept:name",
+      "activity": "concept:name",
+      "timestamp": "time:timestamp",
+      "lifecycle_policy": "retain_all_label_by_concept_name"
+    }
+  ],
+  "discovery": [
+    {
+      "id": "imf",
+      "implementation": "pm4py",
+      "ready": true,
+      "grid": {
+        "noise_threshold": [0.0, 0.1, 0.2, 0.3, 0.4]
+      }
+    },
+    {
+      "id": "heuristics",
+      "implementation": "pm4py",
+      "ready": true,
+      "grid": {
+        "dependency_threshold": [0.5, 0.7, 0.9],
+        "and_threshold": [0.65],
+        "loop_two_threshold": [0.5]
+      }
+    },
+    {
+      "id": "alpha",
+      "implementation": "pm4py",
+      "ready": true,
+      "grid": {}
+    },
+    {
+      "id": "split_miner",
+      "implementation": "external",
+      "ready": false,
+      "blocked_reason": "Adapter and Java runtime must be installed and validated before use.",
+      "grid": {
+        "eta": [0.2, 0.5, 0.8],
+        "epsilon": [0.2, 0.5, 0.8]
+      }
+    }
+  ],
+  "fitness": {
+    "primary_metric": "alignment_fitness",
+    "primary_threshold": 0.95,
+    "fallback_best_delta": 0.02
+  },
+  "priors": {
+    "activity_prior_primary": "uniform",
+    "length_calibration_basis": "distinct_variants",
+    "geometric": {
+      "default": "median_calibrated",
+      "relative_horizon_factors": [0.5, 0.75, 1.0, 1.5, 2.0],
+      "absolute_lambda": [0.7, 0.8, 0.9, 0.95, 0.98, 0.99]
+    },
+    "power_law": {
+      "default": "median_calibrated",
+      "relative_horizon_factors": [0.5, 0.75, 1.0, 1.5, 2.0],
+      "absolute_alpha": [1.1, 1.2, 1.5, 2.0, 3.0, 5.0]
+    }
+  },
+  "sampling": {
+    "fractions": [0.1, 0.25, 0.5, 0.75, 1.0],
+    "replicates": 10,
+    "nested_within_replicate": true,
+    "fixed_models": true
+  },
+  "execution": {
+    "discovery_timeout_seconds": 3600,
+    "metric_timeout_seconds": 3600,
+    "bpi2012_alignment_timeout_seconds": 5400,
+    "entropia_timeout_seconds": 3600,
+    "max_memory_gb": 64,
+    "bounded_playout_k_pilot": 20,
+    "tail_tolerances": [0.01, 0.001, 0.0001],
+    "reachability_state_limit": 200000,
+    "reachability_time_limit_seconds": 300,
+    "determinization_state_limit": 200000,
+    "determinization_time_limit_seconds": 300
+  }
+}

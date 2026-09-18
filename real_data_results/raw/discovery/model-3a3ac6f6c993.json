@@ -1,0 +1,22 @@
+{
+  "algorithm": "imf",
+  "arcs": 46,
+  "blocked_reason": null,
+  "created_at": "2026-09-03T12:29:20.027612+00:00",
+  "dataset_id": "road_fines",
+  "elapsed_seconds": 0.8358159319996048,
+  "implementation": "pm4py",
+  "job_id": "model-3a3ac6f6c993",
+  "model_path": "work/models/road_fines/model-3a3ac6f6c993/model.pnml",
+  "parameters": {
+    "noise_threshold": 0.3
+  },
+  "places": 16,
+  "pm4py_version": "2.7.22.2",
+  "ready": true,
+  "silent_transitions": 10,
+  "source_path": "raw/road_fines/Road_Traffic_Fine_Management_Process.xes.gz",
+  "stage": "discovery",
+  "transitions": 20,
+  "visible_transitions": 10
+}

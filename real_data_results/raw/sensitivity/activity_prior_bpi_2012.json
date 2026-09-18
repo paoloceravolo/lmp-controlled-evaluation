@@ -1,0 +1,138 @@
+{
+  "alphabet_size": 24,
+  "computed_at": "2026-09-05T09:45:42.997867+00:00",
+  "dataset_id": "bpi_2012",
+  "laplace_delta": 1.0,
+  "prior": "geometric",
+  "prior_parameter": 0.9823840036712641,
+  "results": [
+    {
+      "model_id": "model-1db9fc82dad1",
+      "status": "reachability_state_limit"
+    },
+    {
+      "model_id": "model-320605cc0ca1",
+      "status": "reachability_state_limit"
+    },
+    {
+      "laplace": {
+        "accepted_variants": 3806,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.00018372314919170562,
+        "lower_bound": 0.006653102125986765,
+        "score": 0.006653102125986765,
+        "status": "ok",
+        "upper_bound": 0.006653102125986765
+      },
+      "model_id": "model-459ddf1e0ba3",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 3806,
+        "certification": "full_language_sparse_solve",
+        "exact": 5.983212444472832e-05,
+        "lower_bound": 0.020194999545701416,
+        "score": 0.020194999545701416,
+        "status": "ok",
+        "upper_bound": 0.020194999545701416
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 4366,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.00021059116321414878,
+        "lower_bound": 0.005807493048787375,
+        "score": 0.005807493048787375,
+        "status": "ok",
+        "upper_bound": 0.005807493048787375
+      },
+      "model_id": "model-47e145cbcaa4",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 4366,
+        "certification": "full_language_sparse_solve",
+        "exact": 8.616377975958925e-05,
+        "lower_bound": 0.014024412586000394,
+        "score": 0.014024412586000394,
+        "status": "ok",
+        "upper_bound": 0.014024412586000394
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 2552,
+        "certification": "full_language_sparse_solve",
+        "exact": 5.1139133521452974e-05,
+        "lower_bound": 6.042826225047207e-06,
+        "score": 6.042826225047207e-06,
+        "status": "ok",
+        "upper_bound": 6.042826225047207e-06
+      },
+      "model_id": "model-64f7d91e2636",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 2552,
+        "certification": "full_language_sparse_solve",
+        "exact": 3.357320947472759e-05,
+        "lower_bound": 1.0533776515268674e-07,
+        "score": 1.0533776515268674e-07,
+        "status": "ok",
+        "upper_bound": 1.0533776515268674e-07
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 174,
+        "certification": "full_language_sparse_solve",
+        "exact": 3.961305793973088e-06,
+        "lower_bound": 0.3086596246216223,
+        "score": 0.3086596246216223,
+        "status": "ok",
+        "upper_bound": 0.3086596246216223
+      },
+      "model_id": "model-69352199a7a5",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 174,
+        "certification": "full_language_sparse_solve",
+        "exact": 3.160745659272379e-06,
+        "lower_bound": 0.38231258850535715,
+        "score": 0.38231258850535715,
+        "status": "ok",
+        "upper_bound": 0.38231258850535715
+      }
+    },
+    {
+      "model_id": "model-7462247286ae",
+      "status": "reachability_state_limit"
+    },
+    {
+      "laplace": {
+        "accepted_variants": 2563,
+        "certification": "full_language_sparse_solve",
+        "exact": 1.3796739363988092e-05,
+        "lower_bound": 4.347517443781801e-05,
+        "score": 4.347517443781801e-05,
+        "status": "ok",
+        "upper_bound": 4.347517443781801e-05
+      },
+      "model_id": "model-9a05213e090a",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 2563,
+        "certification": "full_language_sparse_solve",
+        "exact": 5.845875205540762e-06,
+        "lower_bound": 1.4802274715357282e-05,
+        "score": 1.4802274715357282e-05,
+        "status": "ok",
+        "upper_bound": 1.4802274715357282e-05
+      }
+    },
+    {
+      "model_id": "model-c0889abf0fba",
+      "status": "reachability_state_limit"
+    }
+  ],
+  "runtime_s": 142.93610987899592,
+  "schema_version": 1
+}

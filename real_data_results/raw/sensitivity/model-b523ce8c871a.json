@@ -1,0 +1,14 @@
+{
+  "alphabet_hash": "alphabet-138a8cad7346",
+  "computed_at": "2026-09-04T14:00:07.308295+00:00",
+  "dataset_id": "sepsis",
+  "median_length": 14.0,
+  "model_id": "model-b523ce8c871a",
+  "results": [
+    {
+      "reachability_states": 0,
+      "status": "reachability_state_limit"
+    }
+  ],
+  "schema_version": 1
+}

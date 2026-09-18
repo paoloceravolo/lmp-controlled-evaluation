@@ -1,0 +1,21 @@
+{
+  "alphabet_hash": "alphabet-138a8cad7346",
+  "computed_at": "2026-09-03T14:52:54.089671+00:00",
+  "core_runtime_s": 4.412153978999413,
+  "dataset_id": "sepsis",
+  "fitness_filter": null,
+  "metric": "lmp_power_law",
+  "metric_params_json": "{\"calibration_basis\":\"distinct_variants\",\"parameter\":1.2100896380906945,\"prior\":\"power_law\"}",
+  "model_id": "model-ef16dcd7e2c2",
+  "peak_rss_mb": null,
+  "prior_hash": "prior-fb949436194d",
+  "reachability_states": 0,
+  "run_id": "lmp-14a77e389fb9",
+  "runtime_s": 4.412153978999413,
+  "sample_fraction": null,
+  "sample_id": null,
+  "sample_seed": null,
+  "schema_version": 1,
+  "status": "reachability_state_limit",
+  "tool_version": "2.7.22.2"
+}

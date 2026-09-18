@@ -1,0 +1,8 @@
+pm4py==2.7.22.2
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.14.0
+matplotlib==3.9.1
+seaborn==0.12.2
+psutil==5.9.5
+pytest==9.0.3

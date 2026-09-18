@@ -1,0 +1,156 @@
+{
+  "alphabet_size": 16,
+  "computed_at": "2026-09-05T09:43:09.148245+00:00",
+  "dataset_id": "sepsis",
+  "laplace_delta": 1.0,
+  "prior": "geometric",
+  "prior_parameter": 0.9548416039104165,
+  "results": [
+    {
+      "laplace": {
+        "accepted_variants": 10,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.062463640130048376,
+        "lower_bound": 0.0002072230854399449,
+        "score": 0.0002072230854399449,
+        "status": "ok",
+        "upper_bound": 0.0002072230854399449
+      },
+      "model_id": "model-3b0e6c5df7f6",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 10,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.017014468901575208,
+        "lower_bound": 0.0005640974857841297,
+        "score": 0.0005640974857841297,
+        "status": "ok",
+        "upper_bound": 0.0005640974857841297
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 16,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.046067144188853486,
+        "lower_bound": 1.8900992005233084e-09,
+        "score": 1.8900992005233084e-09,
+        "status": "ok",
+        "upper_bound": 1.8900992005233084e-09
+      },
+      "model_id": "model-52c9f3855165",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 16,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.04516754399733467,
+        "lower_bound": 8.662794831696524e-11,
+        "score": 8.662794831696524e-11,
+        "status": "ok",
+        "upper_bound": 8.662794831696524e-11
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 16,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.046067144188853486,
+        "lower_bound": 1.8900992005233084e-09,
+        "score": 1.8900992005233084e-09,
+        "status": "ok",
+        "upper_bound": 1.8900992005233084e-09
+      },
+      "model_id": "model-56bd6540fc61",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 16,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.04516754399733467,
+        "lower_bound": 8.662794831696524e-11,
+        "score": 8.662794831696524e-11,
+        "status": "ok",
+        "upper_bound": 8.662794831696524e-11
+      }
+    },
+    {
+      "laplace": {
+        "accepted_variants": 593,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.057268546245409106,
+        "lower_bound": 7.702857273560872e-06,
+        "score": 7.702857273560872e-06,
+        "status": "ok",
+        "upper_bound": 7.702857273560872e-06
+      },
+      "model_id": "model-b2bd3a9b076f",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 593,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.04537516779774056,
+        "lower_bound": 3.8744239547247867e-07,
+        "score": 3.8744239547247867e-07,
+        "status": "ok",
+        "upper_bound": 3.8744239547247867e-07
+      }
+    },
+    {
+      "model_id": "model-b523ce8c871a",
+      "status": "reachability_state_limit"
+    },
+    {
+      "model_id": "model-cc875e4feba2",
+      "status": "reachability_state_limit"
+    },
+    {
+      "laplace": {
+        "accepted_variants": 756,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.045553225483487156,
+        "lower_bound": 9.448276737689049e-05,
+        "score": 9.448276737689049e-05,
+        "status": "ok",
+        "upper_bound": 9.448276737689049e-05
+      },
+      "model_id": "model-d5afeb55020b",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 756,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.04516358552846244,
+        "lower_bound": 5.221411812311684e-06,
+        "score": 5.221411812311684e-06,
+        "status": "ok",
+        "upper_bound": 5.221411812311684e-06
+      }
+    },
+    {
+      "model_id": "model-ef16dcd7e2c2",
+      "status": "reachability_state_limit"
+    },
+    {
+      "laplace": {
+        "accepted_variants": 846,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.02368530294519014,
+        "lower_bound": 0.0008963094455321371,
+        "score": 0.0008963094455321371,
+        "status": "ok",
+        "upper_bound": 0.0008963094455321371
+      },
+      "model_id": "model-f7d11931f1b3",
+      "status": "ok",
+      "uniform": {
+        "accepted_variants": 846,
+        "certification": "full_language_sparse_solve",
+        "exact": 0.003044009501399691,
+        "lower_bound": 0.0034538108501666067,
+        "score": 0.0034538108501666067,
+        "status": "ok",
+        "upper_bound": 0.0034538108501666067
+      }
+    }
+  ],
+  "runtime_s": 29.720836068998324,
+  "schema_version": 1
+}

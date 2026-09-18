@@ -1,0 +1,14 @@
+{
+  "alphabet_hash": "alphabet-652ccb62d8a5",
+  "computed_at": "2026-09-04T13:54:30.832312+00:00",
+  "dataset_id": "road_fines",
+  "median_length": 8.0,
+  "model_id": "model-158f7858ebfc",
+  "results": [
+    {
+      "reachability_states": 0,
+      "status": "reachability_state_limit"
+    }
+  ],
+  "schema_version": 1
+}

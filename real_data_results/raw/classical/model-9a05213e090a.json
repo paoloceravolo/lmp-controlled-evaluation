@@ -1,0 +1,80 @@
+{
+  "run_id": "classical-8cce5c53e73a",
+  "computed_at": "2026-09-05T08:57:00.142787+00:00",
+  "correction_note": "alignment metric status corrected to reflect the true current cause of failure (timeout after the recursion-limit fix), replacing stale error labels from earlier buggy attempts",
+  "dataset_id": "bpi_2012",
+  "metrics": [
+    {
+      "elapsed_seconds": 1468.9611847839988,
+      "error": "exceeded a 90-minute wall-clock watchdog budget with multi_processing=True across 36 cores (a prior single-threaded attempt at up to 2500s also failed); treated as a genuine computational-feasibility limit at this log scale, not retried further",
+      "error_type": "Timeout",
+      "metric": "alignment_precision",
+      "status": "failed",
+      "value": null
+    },
+    {
+      "elapsed_seconds": 273.1790324090107,
+      "metric": "token_precision",
+      "status": "ok",
+      "value": 0.13896828916101012
+    },
+    {
+      "elapsed_seconds": 716.1416000750032,
+      "metric": "alignment_fitness.averageFitness",
+      "status": "ok",
+      "value": 0.9420432701470589
+    },
+    {
+      "elapsed_seconds": 716.1416000750032,
+      "metric": "alignment_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 0.9420432701470589
+    },
+    {
+      "elapsed_seconds": 716.1416000750032,
+      "metric": "alignment_fitness.log_fitness",
+      "status": "ok",
+      "value": 0.9733770044036973
+    },
+    {
+      "elapsed_seconds": 716.1416000750032,
+      "metric": "alignment_fitness.percFitTraces",
+      "status": "ok",
+      "value": 45.33506533200887
+    },
+    {
+      "elapsed_seconds": 716.1416000750032,
+      "metric": "alignment_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 45.33506533200887
+    },
+    {
+      "elapsed_seconds": 18.741148581000743,
+      "metric": "token_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 0.8745039002955171
+    },
+    {
+      "elapsed_seconds": 18.741148581000743,
+      "metric": "token_fitness.log_fitness",
+      "status": "ok",
+      "value": 0.9661817575551821
+    },
+    {
+      "elapsed_seconds": 18.741148581000743,
+      "metric": "token_fitness.perc_fit_traces",
+      "status": "ok",
+      "value": 45.33506533200887
+    },
+    {
+      "elapsed_seconds": 18.741148581000743,
+      "metric": "token_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 45.33506533200887
+    }
+  ],
+  "model_id": "model-9a05213e090a",
+  "model_path": "work/models/bpi_2012/model-9a05213e090a/model.pnml",
+  "pm4py_version": "2.7.22.2",
+  "schema_version": 1
+}

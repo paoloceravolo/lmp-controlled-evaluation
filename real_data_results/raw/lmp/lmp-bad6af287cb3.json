@@ -1,0 +1,21 @@
+{
+  "alphabet_hash": "alphabet-652ccb62d8a5",
+  "computed_at": "2026-09-03T14:47:18.280354+00:00",
+  "core_runtime_s": 39.824117827998634,
+  "dataset_id": "road_fines",
+  "fitness_filter": null,
+  "metric": "lmp_geometric",
+  "metric_params_json": "{\"calibration_basis\":\"distinct_variants\",\"parameter\":0.9258747122872905,\"prior\":\"geometric\"}",
+  "model_id": "model-158f7858ebfc",
+  "peak_rss_mb": null,
+  "prior_hash": "prior-4b7c0f2c6318",
+  "reachability_states": 0,
+  "run_id": "lmp-bad6af287cb3",
+  "runtime_s": 39.824117827998634,
+  "sample_fraction": null,
+  "sample_id": null,
+  "sample_seed": null,
+  "schema_version": 1,
+  "status": "reachability_state_limit",
+  "tool_version": "2.7.22.2"
+}

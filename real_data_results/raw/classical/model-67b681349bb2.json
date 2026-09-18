@@ -1,0 +1,77 @@
+{
+  "run_id": "classical-6df6252b1d26",
+  "computed_at": "2026-09-03T12:51:58.366784+00:00",
+  "dataset_id": "road_fines",
+  "metrics": [
+    {
+      "elapsed_seconds": 17.981308496000565,
+      "metric": "alignment_precision",
+      "status": "ok",
+      "value": 0.813405199061264
+    },
+    {
+      "elapsed_seconds": 18.70615938500123,
+      "metric": "token_precision",
+      "status": "ok",
+      "value": 0.8127486923966469
+    },
+    {
+      "elapsed_seconds": 4.021312255999874,
+      "metric": "alignment_fitness.averageFitness",
+      "status": "ok",
+      "value": 0.9430111287007023
+    },
+    {
+      "elapsed_seconds": 4.021312255999874,
+      "metric": "alignment_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 0.9430111287007023
+    },
+    {
+      "elapsed_seconds": 4.021312255999874,
+      "metric": "alignment_fitness.log_fitness",
+      "status": "ok",
+      "value": 0.9565257021564069
+    },
+    {
+      "elapsed_seconds": 4.021312255999874,
+      "metric": "alignment_fitness.percFitTraces",
+      "status": "ok",
+      "value": 81.03411584757598
+    },
+    {
+      "elapsed_seconds": 4.021312255999874,
+      "metric": "alignment_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 81.03411584757598
+    },
+    {
+      "elapsed_seconds": 4.380887380999411,
+      "metric": "token_fitness.average_trace_fitness",
+      "status": "ok",
+      "value": 0.9629199785017902
+    },
+    {
+      "elapsed_seconds": 4.380887380999411,
+      "metric": "token_fitness.log_fitness",
+      "status": "ok",
+      "value": 0.9739047149777028
+    },
+    {
+      "elapsed_seconds": 4.380887380999411,
+      "metric": "token_fitness.perc_fit_traces",
+      "status": "ok",
+      "value": 83.95491121899315
+    },
+    {
+      "elapsed_seconds": 4.380887380999411,
+      "metric": "token_fitness.percentage_of_fitting_traces",
+      "status": "ok",
+      "value": 83.95491121899315
+    }
+  ],
+  "model_id": "model-67b681349bb2",
+  "model_path": "work/models/road_fines/model-67b681349bb2/model.pnml",
+  "pm4py_version": "2.7.22.2",
+  "schema_version": 1
+}

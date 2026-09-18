@@ -1,0 +1,14 @@
+{
+  "alphabet_hash": "alphabet-6617954d1133",
+  "computed_at": "2026-09-04T14:05:51.484934+00:00",
+  "dataset_id": "bpi_2012",
+  "median_length": 38.0,
+  "model_id": "model-c0889abf0fba",
+  "results": [
+    {
+      "reachability_states": 0,
+      "status": "reachability_state_limit"
+    }
+  ],
+  "schema_version": 1
+}

@@ -2,7 +2,7 @@
 
 ## Summary
 
-The notebook evaluates **Language-Mass Precision (LMP)** on controlled witness tests. The goal is not to benchmark discovery algorithms on real-life logs, but to check whether LMP behaves as an exact model-language precision measure when the relevant language relations are known by construction.
+This note covers the controlled part of the evaluation only: the witness tests in the notebook, which check whether **Language-Mass Precision (LMP)** behaves as an exact model-language precision measure when the relevant language relations are known by construction. The evaluation on public event logs reported in the paper (Road Traffic Fine Management, Sepsis Cases, BPI Challenge 2012) is documented separately in `REPRODUCIBILITY.md`.
 
 LMP is a quotient-based measure. It instantiates the monotone language-quotient framework with a fixed, full-support probability mass over traces. The quotient is:
 
@@ -35,6 +35,8 @@ The most revealing model-inclusion experiment is the decoy stress test. Model \(
 | PM4Py token-based precision | 0.3125 | 0.6667 |
 | PM4Py alignment precision | 0.3125 | 0.7143 |
 | PM4Py footprint precision | 0.3125 | 0.5000 |
+
+PM4Py token-based replay is not deterministic on this net: repeated runs for \(M_2\) return 0.6667 (the value in the paper) or 1.0 (the value in the archived `results/` files). The ordering against \(M_1\) (0.3125) is the same in both cases.
 
 This is evidence that LMP measures model-language precision, while replay-based precision can be influenced by local enabled behavior and structural features of the Petri net.
 
@@ -78,4 +80,4 @@ Once a bounded or finite-state language representation is available, LMP itself 
 
 ## Scope
 
-The experiments are controlled by design. They are appropriate for testing axiomatic and semantic behavior because the relevant language relations are known. They do not establish that LMP is empirically superior as a discovery-quality indicator on real-life logs. Such validation requires a separate benchmark with public logs, discovery algorithms, and task-level or human criteria.
+The witness tests are controlled by design: the relevant language relations are known, which makes them suitable for testing axiomatic and semantic behavior. They do not show how LMP ranks models discovered from recorded logs; the evaluation on public event logs addresses that question (see `REPRODUCIBILITY.md`). Neither part establishes that LMP is superior to other measures as a discovery-quality indicator, which would require task-level or human criteria.

@@ -53,6 +53,10 @@ Start from `REPRODUCIBILITY.md` for how the three fit together; `core/` also
 has its own `requirements.txt`, separate from the one below, since it pins
 exact versions for that pipeline.
 
+## Library
+
+A maintained, PM4Py-compatible implementation of LMP is available as [`language-mass-precision`](https://github.com/sbarbonjr/language-mass-precision). This repository remains the reproducibility package for the paper: its results come from the notebook and from `core/`.
+
 ## Dependencies
 
 The notebook uses PM4Py for PNML loading, playout, and classical precision/fitness metrics. It uses pandas and SciPy for tabulation and stochastic similarity fallbacks. RapidFuzz and POT are optional accelerators.
@@ -65,4 +69,4 @@ pip install -r requirements.txt
 
 ## Terminology
 
-Earlier drafts used the name LMP. This package uses the final terminology from the paper: **Language-Mass Precision (LMP)**. Any remaining reference to LMP should be treated as obsolete.
+This package uses the terminology of the paper: **Language-Mass Precision (LMP)**.

@@ -98,7 +98,7 @@ confirming the corrected data still passes every integrity check.
 
 `table4_real_log_summary.csv` reports Sepsis's LMP (geometric) maximum as
 **0.003**, computed directly from `aggregated/metrics_long.csv`
-(`model-b2bd3a9b076f`, 0.0034538...). The current paper draft prints this
+(`model-f7d11931f1b3`, 0.0034538...). The current paper draft prints this
 cell as 0.004. The underlying raw value is unchanged either way and doesn't
 affect any ranking or conclusion in the paper, but the displayed digit should
 be corrected to 0.003 to match the data on the next revision.

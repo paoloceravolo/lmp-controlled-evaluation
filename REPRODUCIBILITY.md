@@ -16,4 +16,5 @@ directly, no need to re-run discovery or PM4Py. To reproduce from the logs
 themselves, start from `real_data/README.md` and then `core/README.md`.
 
 The controlled (synthetic) experiments in Tables 1-3 are covered separately
-by the notebook repository cited in the paper.
+by `LMP_Controlled_Evaluation.ipynb` at the root of this repository; see
+`Short_Research_Note.md` for a summary.

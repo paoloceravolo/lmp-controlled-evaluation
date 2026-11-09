@@ -33,6 +33,26 @@ The `results/` directory contains exported CSV files using the LMP terminology. 
 - `prior_non_inclusion_counterexample.csv`: small example where non-inclusion-related rankings depend on the prior;
 - `lmp_imprecision_attribution_example.csv`: example of trace-level attribution of imprecision.
 
+## Real-log evaluation
+
+The notebook above covers the controlled experiments only. The real-log
+evaluation reported in the paper (Section 6.1, Table 4: Road Traffic Fine
+Management, Sepsis Cases, BPI Challenge 2012) lives in three separate
+directories, kept apart from the notebook because they reproduce a different
+part of the paper with different tooling:
+
+- `real_data/` – which public event logs were used, their DOIs and
+  checksums, and a script to fetch and verify them.
+- `real_data_results/` – the archived measurements behind every real-log
+  number in the paper: raw per-model discovery/classical/LMP records, the
+  aggregated `metrics_long.csv`, and a script-checkable summary of Table 4.
+- `core/` – the LMP engine and pipeline scripts (discovery, PM4Py baselines,
+  prior- and finite-support-sensitivity sweeps) that produced those results.
+
+Start from `REPRODUCIBILITY.md` for how the three fit together; `core/` also
+has its own `requirements.txt`, separate from the one below, since it pins
+exact versions for that pipeline.
+
 ## Dependencies
 
 The notebook uses PM4Py for PNML loading, playout, and classical precision/fitness metrics. It uses pandas and SciPy for tabulation and stochastic similarity fallbacks. RapidFuzz and POT are optional accelerators.
